@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'GraphikBold';
+  src: url('./font/GraphikBold.otf');
+}
+@font-face {
+  font-family: 'GraphikMedium';
+  src: url('./font/GraphikMedium.otf');
+}
+@font-face {
+  font-family: 'GraphikRegular';
+  src: url('./font/GraphikRegular.otf');
+}
+@font-face {
+  font-family: 'GraphikLight';
+  src: url('./font/GraphikLight.otf');
+}
+@font-face {
+  font-family: 'GraphikExtraLight';
+  src: url('./font/GraphikExtraLight.otf');
+}
+
+html, body {
+  overflow: hidden; /* Prevent vertical scrolling */
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  /* background-image: url("images/WHITE-APE-FACE.png"); */
+  background-size: cover;
+  background-color: #001B0F;
+  background-position: center; /* Default for desktop view */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* @media (max-width: 768px) {
+  body {
+    background-position: 10% center; /* Adjust for mobile view */
+  }
+} */
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ape-container img {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 50rem;
+}
+
+
+#hero {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+#bottom {
+  height: 40%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hero__image-container {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__image {
+  width: 70%;
+  vertical-align: top;
+}
+
+.bottom__header {
+  max-width: 100%;
+  text-align: center;
+}
+
+.bottom__header h2 {
+  color: white;
+  font-family: "GraphikRegular", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem
+}
+
+.bottom__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom__content__email-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom__content__email_text,
+.bottom__content__email_value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.bottom__content__email_text h3,
+.bottom__content__email_value h3 {
+  color: white;
+  font-size: 0.6rem;
+  margin: 0;
+  font-family: "GraphikLight", sans-serif;
+  letter-spacing: 2px;
+}
+
+.bottom__content__email_value h3 {
+  font-family: "GraphikBold", sans-serif;
+  margin-left: 0.5rem;
+}
+
+.bottom__content button {
+  position: relative; /* Ensure the button is positioned relative to allow absolute positioning of the pseudo-element */
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.bottom__content button:before {
+  content: "Copied";
+  position: absolute;
+  bottom: 45px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  padding: 8px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  display: none;
+  white-space: nowrap;
+  /* border: 1px solid #fff; */
+}
+
+.bottom__content button:after {
+  content: "";
+  position: absolute;
+  bottom: 40px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  transform: translateX(-50%) rotate(45deg);
+  display: none;
+
+}
+
+.bottom__content button.active:before,
+.bottom__content button.active:after {
+  display: block;
+}
+
+@media (min-width: 40rem) {
+
+  .bottom__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bottom__content button {
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+
+  #ape-container img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 60rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* @media (max-width: 40rem) {
+  body {
+    background-position: 20% 10%;
+  }
+} */
