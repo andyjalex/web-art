@@ -52,7 +52,7 @@
     left: -120px;
     width: calc(100% + 120px);
     height: 560px; /* Original polygon height */
-    background: #ff1b68;
+    background: #D2BD0A; /*#ff1b68;*/
     clip-path: polygon(0 97%, 77% 82%, 100% 97%);
     z-index: 2;
   }
@@ -74,7 +74,7 @@
     color: white;
     font-family: "Anton", sans-serif;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     left: 3%;
     font-size: 1.6rem;
     z-index: 3; /* Ensure the h1 is above the ::after pseudo-element */

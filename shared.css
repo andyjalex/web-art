@@ -10,6 +10,8 @@ body {
 
 main {
   min-height: calc(100vh - 11.5rem);
+
+  margin-top: 3.5rem;
 }
 .main-header {
     width: 100%;
@@ -69,7 +71,7 @@ main {
 .main-nav__item--cta a,
 .mobile-nav__item--cte a {
     color: white;
-    background: #ff1b68;
+    background: #D2BD0A;
     padding: 8px 16px;
     border-radius: 8px;
 }
@@ -87,7 +89,7 @@ main {
 .main-footer {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
     url("images/footer-bg.png") right/cover no-repeat;
-
+  margin-top: 0px;
   padding: 32px;
 
 }
