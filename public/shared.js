@@ -1,29 +1,39 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-   event.preventDefault();
+var backdrop = document.querySelector('.backdrop');
+var toggleButton = document.querySelector('.toggle-button');
+var mobileNav = document.querySelector('.mobile-nav');
+var nav__items = document.querySelector('.mobile-nav__items');
 
-   const formData = new FormData(event.target);
-   const formObject = {};
-   formData.forEach((value, key) => formObject[key] = value);
+toggleButton.addEventListener('click', function() {
+  // mobileNav.style.display = 'block';
+  // backdrop.style.display = 'block';
+  mobileNav.classList.add('open');
 
-   fetch('/contact', {
-       method: 'POST',
-       headers: {
-           'Content-Type': 'application/json'
-       },
-       body: JSON.stringify(formObject),
-       // credentials: 'include'
-   })
-   .then(response => response.json())
-   .then(data => {
-       if (data.status === 'success') {
-           alert('Message sent successfully!');
-           window.location.href = 'index.html'; // Redirect to another page
-       } else {
-           alert('There was an error sending the message.');
-       }
-   })
-   .catch(error => {
-       console.error('Error:', error);
-       alert('There was an error sending the message.');
-   });
+  backdrop.style.display = 'block';
+  setTimeout(function() {
+    backdrop.classList.add('open');
+  }, 10)
+
+})
+
+backdrop.addEventListener("click", function() {
+  //mobileNav.style.display = 'none';
+  mobileNav.classList.remove('open');
+  closeModal()
 });
+
+
+nav__items.addEventListener("click", function() {
+  mobileNav.classList.remove('open');
+  closeModal()
+})
+
+function closeModal() {
+
+  // if(modal) {
+  //   modal.classList.remove('open');
+  // }
+  backdrop.style.display = 'none';
+  setTimeout(function() {
+    backdrop.classList.remove('open');
+  }, 10)
+}

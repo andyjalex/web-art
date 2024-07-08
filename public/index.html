@@ -12,9 +12,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
+  <div class="backdrop"></div>
   <main>
     <header class="main-header">
-
         <div>
           <button class="toggle-button">
               <span class="toggle-button__bar"></span>
@@ -39,6 +39,19 @@
             </ul>
         </nav>
     </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="#services">Services</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#web-creations">Web Creations</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="contact-us/index.html">Contact us</a>
+            </li>
+        </ul>
+    </nav>
     <section id="product-overview">
         <div class="hero-logo-container">
           <img src="./images/white-w+a-logo.png" class=''/>
@@ -85,7 +98,7 @@
                 <img src="./images/pitch-basic.png" class='data-visual__img'/>
               </div>
               <div id="data-visual-2" class="data-visual">
-                <img src="./images/right-arrow.png" class='accent2-img'/>
+                <img src="./images/right-arrow.png" class='data-visual__arrow'/>
                 <img src="./images/pitch-viz.png" class='data-visual__img'/>
               </div>
           </div>

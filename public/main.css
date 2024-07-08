@@ -310,6 +310,14 @@
   #data-visual-2.data-visual {
     text-align: right;
   }
+  .data-visual__arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 65px;
+    transform: translateX(70%) translateY(60%);
+  }
+
   .service__bottom-section img {
     transform: rotateZ(300deg) translateX(5rem) translateY(8rem);
   }

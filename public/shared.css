@@ -31,6 +31,19 @@ main {
     background-color: rgba(0, 0, 0, 0.2); /* Adjusted background color on scroll */
 }
 
+.backdrop {
+  display: none;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 0.2s linear;
+
+}
 
 
 .main-header__brand {
@@ -63,9 +76,12 @@ main {
 .main-nav__item a,
 .mobile-nav__item a {
     text-decoration: none;
-    color: #fff;
+    color: #001B0F;
     font-weight: bold;
     padding: 3px 0;
+}
+.main-nav__item a {
+  color: #fff;
 }
 
 .main-nav__item a:hover,
