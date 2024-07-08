@@ -18,13 +18,19 @@ main {
     position: fixed;
     top: 0;
     left: 0;
-    background: transparent;
     padding: 0.5rem 1rem;
-    z-index: 100;
+    background: rgba(0, 0, 0, 0.0);
+    transition: background-color 0.2s ease-out; /* Adjusted transition */
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.main-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.2); /* Adjusted background color on scroll */
+}
+
 
 
 .main-header__brand {
