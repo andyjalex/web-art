@@ -45,6 +45,9 @@ main {
 
 }
 
+.logo-container {
+  display: flex; align-items: center; justify-content: center;
+}
 
 .main-header__brand {
     color: #0e4f1f;
