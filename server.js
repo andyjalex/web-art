@@ -19,12 +19,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve the index.html file on the root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'src', 'index.html'));
 });
 
 // Serve the contact-us.html file on the /contact route
 app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'contact-us.html'));
+    res.sendFile(path.join(__dirname, 'src', 'contact-us.html'));
 });
 
 app.post('/contact', (req, res) => {
