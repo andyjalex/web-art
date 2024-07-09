@@ -19,15 +19,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve the index.html file on the root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'index.html'));
+  console.log('in here')
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Serve the contact-us.html file on the /contact route
-app.get('/contact', (req, res) => {
-    res.sendFile(path.join(__dirname, 'src', 'contact-us.html'));
+app.get('/contact-us', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'contact-us', 'index.html'));
 });
 
-app.post('/contact', (req, res) => {
+
+app.post('/contact-us', (req, res) => {
     const { work, 'first-name': firstName, 'last-name': lastName, email, query, 'agree-terms': agreeTerms } = req.body;
 
     const transporter = nodemailer.createTransport({

@@ -5,7 +5,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
    const formObject = {};
    formData.forEach((value, key) => formObject[key] = value);
 
-   fetch('/contact', {
+   fetch('/contact-us', {
        method: 'POST',
        headers: {
            'Content-Type': 'application/json'
