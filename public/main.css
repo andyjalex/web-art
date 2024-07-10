@@ -65,7 +65,7 @@
     width: calc(100% + 120px);
     height: 560px; /* Original polygon height */
     background: #D2BD0A; /*#ff1b68;*/
-    clip-path: polygon(0 97%, 77% 82%, 100% 97%);
+    clip-path: polygon(-4% 97.5%, 77% 82%, 104% 99%);
     z-index: 2;
   }
   #product-overview::before {
@@ -84,13 +84,13 @@
 
   #product-overview h1 {
     color: white;
-    font-family: "Anton", sans-serif;
+    /* font-family: "Anton", sans-serif; */
     position: absolute;
     bottom: 15%;
     left: 3%;
     font-size: 1.6rem;
     z-index: 3; /* Ensure the h1 is above the ::after pseudo-element */
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   #bottom {
     height: 40%;
@@ -127,6 +127,7 @@
 
   #services h2 {
     margin: 2rem;
+    text-align: center;
   }
 
 
@@ -147,6 +148,7 @@
   #web-creations h2 {
     margin: 2rem;
     color: white;
+    text-align: center;
   }
   .creations-list {
     width: 100%;
@@ -453,6 +455,18 @@
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
     }
 
+    #services h2 {
+      margin: 3rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    #web-creations h2 {
+      margin: 2rem;
+      color: white;
+      text-align: left;
+    }
     .creations-list {
       flex-direction: row;
     }
