@@ -42,8 +42,8 @@ function closeModal() {
 const galleryItems = [
   {
       id: 1,
-      title: 'Nelson Mandela',
-      imageId:'1dTeUJqYDCQgSDFrYZf6sVZj1lXNDnu3M',
+      title: 'Bachata Dancers',
+      imageId:'1fj5phvTucRe8lr6o2qHMO_QtOVoVyBGf',
       
   },
   {
@@ -63,8 +63,8 @@ const galleryItems = [
   },
   {
       id: 5,
-      title: 'Birthday card 1',
-      imageId:'1ubQXw4SNyAYAt4CDu6m334vnFOnDXY1u',
+      title: 'Bachata Dancers',
+      imageId:'1cxlPJr9tWB3HrgcLS1dttXFmkjCe4I6y',
   },
   {
     id: 6,
@@ -84,13 +84,13 @@ const galleryItems = [
 },
 {
     id: 9,
-    title: 'Xmas man',
-    imageId:'1vxr_XN63ngqLQ2w3NvVyEyJ4auerXDSO',
+    title: 'Dog outline',
+    imageId:'1dYx_n0m8eqM5TCF4jz4lgVNfshIP8S9t',
 },
 {
     id: 10,
-    title: 'Birthday card 1',
-    imageId:'1ubQXw4SNyAYAt4CDu6m334vnFOnDXY1u',
+    title: 'Shane',
+    imageId:'1Cf-CtOh_tPd7vCE5Wefb4f08ntxssbsX',
 }
 ]
 
@@ -103,6 +103,7 @@ const getImageUrl = (imageId) => `https://drive.google.com/thumbnail?id=${imageI
 const data = galleryItems
   .map((item) => {
     const imageURL = getImageUrl(item.imageId);
+    console.log(imageURL)
     return imageURL ? { ...item, imageURL } : null; // Return modified item or null
   })
  
@@ -138,7 +139,7 @@ function adjustGridSpan(img) {
 
 
 
-creations.appendChild(creation)
+//creations.appendChild(creation)
 
 
 
