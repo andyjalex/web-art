@@ -112,8 +112,8 @@ main {
 }
 
 .main-footer {
-  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("images/footer-bg.png") right/cover no-repeat;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent);
+ 
   margin-top: 0px;
   padding: 32px;
 
