@@ -66,6 +66,10 @@ h1 {
   left: 50%;
   padding: 0px 16px;
   transform: translate(-50%, -50%);
+  @media screen and (max-width: 40rem) {
+    font-size: 5em;
+    
+  }
 }
 
 .circle1 {
@@ -76,6 +80,12 @@ h1 {
   clip-path: circle(150px at 0 0);
   animation: increaseCircle1 4s forwards;
   z-index: 2;
+  @media screen and (max-width: 40rem) {
+    width: 100%;
+    height: 100%;
+    animation: increaseCircle1Mobile 4s forwards;
+  }
+  
 }
 .circle2 {
   position: absolute;
@@ -90,6 +100,10 @@ h1 {
   color: transparent;
   -webkit-text-stroke: 5px #000;
   border: 4px solid #000;;
+
+  @media screen and (max-width: 40rem) {
+    font-size: 5em;
+  }
 }
 @keyframes increaseCircle1 {
   0% {
@@ -100,8 +114,23 @@ h1 {
   }
   100% {
     clip-path: circle(800px at 0 0);
-  }
+  } 
+ 
 }
+
+@keyframes increaseCircle1Mobile {
+  0% {
+    clip-path: circle(75px at 0 0);
+  }
+  99% {
+    clip-path: circle(400px at 0 0);
+  }
+  100% {
+    clip-path: circle(400px at 0 0);
+  } 
+ 
+}
+
 @keyframes increaseCircle2 {
   0% {
     clip-path: polygon(100% 100%, 50% 100%, 40% 100%, 100% 100%);
@@ -116,6 +145,7 @@ h1 {
 
 #product-overview ul {
   position: absolute;
+  display: flex;
   left: 5%;
   bottom: 5%;
   margin: 0;
@@ -133,8 +163,8 @@ h1 {
   white-space: nowrap; /* Prevent text from wrapping to the next line */
   flex-flow: row wrap;
 
-  @media (min-width: 768px) {
-    display: flex;
+  @media (max-width: 768px) {
+    bottom: 20%;
   }
 }
 #product-overview ul li {
@@ -203,7 +233,16 @@ h1 {
   padding: 4px;
   border: 2px solid #000;
   border-radius: 4px;
+  @media (max-width: 40rem) {
+    font-size: 1rem;
+  }
   
+}
+.products {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 20%;
 }
 
 .product-web {
@@ -211,6 +250,7 @@ h1 {
   left: 3%;
   animation: moveInText 2s forwards;
   animation-delay: 1.5s;
+
 }
 
 .product-art {
@@ -218,33 +258,51 @@ h1 {
   right: 3%;
   animation: moveInTextRight 2s forwards;
   animation-delay: 2.5s;
+
 }
 
 #product-overview #dev {
-  bottom: 30%;
+  bottom: 5%;
+  @media (max-width: 40rem) {
+    bottom: 100%;
+  }
 }
 #product-overview #design {
   left: 0%;
-  bottom: 40%;
+  bottom: 10%;
+   @media (max-width: 40rem) {
+    bottom: 95%;
+  }
   
 }
 #product-overview #mobile {
   left: 0%;
-  bottom: 50%;
+  bottom: 15%;
+   @media (max-width: 40rem) {
+    bottom: 90%;
+  }
   
 }
 
 #product-overview #figure {
   bottom: 20%;
+    @media (max-width: 40rem) {
+      bottom: 25%;
+    } 
 }
 #product-overview #brand {
- 
   bottom: 10%;
+   @media (max-width: 40rem) {
+      bottom: 30%;
+    } 
   
 }
 #product-overview #wood {
   
   bottom: 0%;
+   @media (max-width: 40rem) {
+      bottom: 35%;
+    } 
   
 }
 
@@ -286,12 +344,11 @@ h1 {
   flex-direction: column;
   position: relative;
   z-index: 2;
-
+  margin-top: 100vh;
 
   /* clip-path: polygon(0 0, 0% 16px, 30% 16px, 90% 0px, 100% 16px, 100% 16px, 100% 0, 100% 100%, 0% 100%);   */
 
   overflow: hidden;
-  margin-top: 95vh; /* Adjust to match the height of #product-overview */
   padding-bottom: 2rem;
 }
 
