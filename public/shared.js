@@ -91,9 +91,18 @@ const galleryItems = [
     id: 10,
     title: 'Shane',
     imageId:'1Cf-CtOh_tPd7vCE5Wefb4f08ntxssbsX',
+},
+{
+    id: 11,
+    title: 'BBV logo',
+    imageId:'1W96P3xIDALjkJ6PRt6WwXIIPlPRmWsDq'
+},
+{
+    id: 12,
+    title: 'up2date Icon',
+    imageId:'1Ilza4hZ0iPWPNxOBd6jq6zLtW0-YJb4E'
 }
 ]
-
 
 //fetch gallery items 
 // Function to construct the image URL
