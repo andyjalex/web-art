@@ -354,7 +354,6 @@ h1 {
 #bottom {
   height: 40%;
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("images/footer-bg.png") right/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;

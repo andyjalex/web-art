@@ -122,23 +122,25 @@ console.log(data);
 const creations = document.querySelector('.creations-list');
 console.log(creations)
 
-creations.classList.add('image-list')
+if (creations) {
+  creations.classList.add('image-list')
 
-creations.innerHTML += data.map((item) => {
-  
-return (
-  `
-  <div style="">
-    <h3>${item.title}</h3>
-    <img 
-      src=${item.imageURL}
-      onload="adjustGridSpan(this)"
-    /> 
-  </div>
-  `)
+  creations.innerHTML += data.map((item) => {
+    
+  return (
+    `
+    <div style="">
+      <h3>${item.title}</h3>
+      <img 
+        src=${item.imageURL}
+        onload="adjustGridSpan(this)"
+      /> 
+    </div>
+    `)
 
+  }
+  ).join('')
 }
-).join('')
 
 function adjustGridSpan(img) {
   const height = img.clientHeight;
@@ -149,6 +151,5 @@ function adjustGridSpan(img) {
 
 
 //creations.appendChild(creation)
-
 
 

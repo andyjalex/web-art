@@ -25,8 +25,7 @@ main {
     top: 0;
     left: 0;
     padding: 0.5rem 1rem;
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-        url("../images/contact-hero.png") center/cover no-repeat;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent);
     transition: background-color 0.2s ease-out; /* Adjusted transition */
     z-index: 1000;
     display: flex;
