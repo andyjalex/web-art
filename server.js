@@ -28,6 +28,10 @@ app.get('/contact-us', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'contact-us', 'index.html'));
 });
 
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'about', 'index.html'));
+});
+
 
 app.post('/contact-us', (req, res) => {
     const { work, 'first-name': firstName, 'last-name': lastName, email, query, 'agree-terms': agreeTerms } = req.body;
