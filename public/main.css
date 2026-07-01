@@ -66,8 +66,12 @@ h1 {
   left: 50%;
   padding: 0px 16px;
   transform: translate(-50%, -50%);
-  @media screen and (max-width: 40rem) {
-    font-size: 5em;
+  
+}
+
+@media  (max-width: 40rem) {
+    h1 {
+      font-size: 5em;
     
   }
 }
@@ -81,13 +85,14 @@ h1 {
   animation: increaseCircle1 4s forwards;
   z-index: 2;
   overflow: hidden;
-  @media screen and (max-width: 40rem) {
-    width: 100%;
+}
+@media (max-width: 40rem) {
+    .circle1 {
+      width: 100%;
     height: 100%;
     animation: increaseCircle1Mobile 4s forwards;
-  }
-  
-}
+  }}
+
 .circle1::after,
 .circle2::after {
   content: "";
@@ -100,8 +105,12 @@ h1 {
   clip-path: circle(150px at 0 0);
   animation: increaseCircle1 4s forwards;
 
-  @media screen and (max-width: 40rem) {
-    animation: increaseCircle1Mobile 4s forwards;
+ 
+}
+
+ @media (max-width: 40rem) {
+    .circle1::after {
+      animation: increaseCircle1Mobile 4s forwards;
   }
 }
 .circle2 {
@@ -125,10 +134,13 @@ h1 {
   -webkit-text-stroke: 5px #000;
   border: 4px solid #000;;
 
-  @media screen and (max-width: 40rem) {
-    font-size: 5em;
-  }
+  
 }
+
+@media (max-width: 40rem) {
+    .circle1 h1,
+    .circle2 h1 {font-size: 5em;}
+  }
 @keyframes increaseCircle1 {
   0% {
     clip-path: circle(150px at 0 0);
@@ -187,10 +199,14 @@ h1 {
   white-space: nowrap; /* Prevent text from wrapping to the next line */
   flex-flow: row wrap;
 
-  @media (max-width: 768px) {
-    bottom: 20%;
-  }
+  
 }
+
+@media (max-width: 768px) {
+
+    #product-overview ul {
+      bottom: 20%;}
+  }
 #product-overview ul li {
   opacity: 0;
   visibility: hidden;
@@ -257,11 +273,14 @@ h1 {
   padding: 4px;
   border: 2px solid #000;
   border-radius: 4px;
-  @media (max-width: 40rem) {
-    font-size: 1rem;
-  }
+  
   
 }
+@media (max-width: 40rem) {
+    #product-overview h2  {
+      font-size: 1rem;
+    }
+  }
 .products {
   position: absolute;
   width: 100%;
@@ -287,18 +306,21 @@ h1 {
 
 #product-overview #dev {
   bottom: 5%;
-  @media (max-width: 40rem) {
-    bottom: 100%;
-  }
+  
 }
+
 #product-overview #design {
   left: 0%;
   bottom: 10%;
-   @media (max-width: 40rem) {
-    bottom: 95%;
-  }
-  
 }
+
+@media (max-width: 40rem) {
+    #product-overview #dev {
+      bottom: 100%;}
+      #product-overview #design {
+        bottom: 95%;
+      }
+  }
 #product-overview #mobile {
   left: 0%;
   bottom: 15%;
@@ -394,10 +416,15 @@ body {
   flex-direction: column;
   padding-bottom: 2rem;
 
-  @media (max-width: 640px) {
+ 
+}
+
+ @media (max-width: 640px) {
+  #web-creations {
     align-items: center;
   }
-}
+    
+  }
 
 
 #web-creations::after {
