@@ -113,20 +113,6 @@ h1 {
   mask-size: 55% 100%;
 }
 
-@media (max-width: 40rem) {
-  h1 {
-    font-size: 5em;
-  }
-}
-
-@media (max-width: 40rem) {
-  .circle1 {
-    width: 100%;
-    height: 100%;
-    animation: increaseCircle1Mobile 4s forwards;
-  }
-}
-
 .circle2::after {
   content: "";
   position: absolute;
@@ -134,11 +120,6 @@ h1 {
   pointer-events: none;
 }
 
-@media (max-width: 40rem) {
-  .circle1::after {
-    animation: increaseCircle1Mobile 4s forwards;
-  }
-}
 .circle2 {
   position: absolute;
   width: 100%;
@@ -154,17 +135,11 @@ h1 {
   background: linear-gradient(
     135deg,
     transparent 0 52%,
-    rgba(255, 182, 46, 1) 62%,
-    rgba(255, 182, 46, 1) 72%,
-    transparent 84%
+    rgba(255, 182, 46, .5) 62%,
+    rgba(255, 182, 46, .75) 72%,
+    transparent 94%
   );
-  border-radius: 48% 0 0 34% / 18% 0 0 42%;
   animation: reveal 2s forwards;
-}
-@media (max-width: 40rem) {
-  .logo-mask--circle {
-    animation: increaseCircle1Mobile 4s forwards;
-  }
 }
 @keyframes increaseCircle1 {
   0% {
@@ -379,11 +354,6 @@ h1 {
   border: 2px solid #000;
   border-radius: 4px;
 }
-@media (max-width: 40rem) {
-  #product-overview h2 {
-    font-size: 1rem;
-  }
-}
 .products-container {
   position: absolute;
   display: grid;
@@ -408,20 +378,8 @@ h1 {
   z-index: 2;
 }
 
-@media (max-width: 40rem) {
-  #product-overview #dev {
-    bottom: 100%;
-  }
-  #product-overview #design {
-    bottom: 95%;
-  }
-}
 #product-overview #mobile {
   z-index: 3;
-
-  @media (max-width: 40rem) {
-    bottom: 90%;
-  }
 }
 
 #product-overview img {
@@ -432,21 +390,12 @@ h1 {
 
 #product-overview #figure {
   bottom: 40%;
-  @media (max-width: 40rem) {
-    bottom: 25%;
-  }
 }
 #product-overview #brand {
   bottom: 30%;
-  @media (max-width: 40rem) {
-    bottom: 30%;
-  }
 }
 #product-overview #wood {
   bottom: 20%;
-  @media (max-width: 40rem) {
-    bottom: 35%;
-  }
 }
 
 @keyframes moveInText {
@@ -589,13 +538,21 @@ body {
 }
 
 .service .left {
-  left: 0;
+  left: 4rem;
   top: 20%;
+  max-width: 48rem;
+  border: solid 1px #797474;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .service .right {
-  right: 0;
-  bottom: 40%;
+  right: 4rem;
+  bottom: 20%;
+  max-width: 48rem;
+  border: solid 1px #797474;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .service__title {
@@ -868,12 +825,6 @@ body {
   }
 }
 
-/* @media (max-width: 40rem) {
-    body {
-      background-position: 20% 10%;
-    }
-  } */
-
 @keyframes skew-down {
   0% {
     transform: skewY(-3deg);
@@ -942,4 +893,83 @@ body {
   50% {
     fill: rgba(34, 231, 192, 0.35);
   }
+}
+
+@media (max-width: 40rem) {
+  h1 {
+    font-size: 4em;
+    top: 30%;
+  }
+
+  .circle1 {
+    width: 100%;
+    height: 100%;
+    animation: increaseCircle1Mobile 4s forwards;
+  }
+
+  .circle1::after {
+    animation: increaseCircle1Mobile 4s forwards;
+  }
+
+  .logo-mask--circle {
+    animation: increaseCircle1Mobile 4s forwards;
+  }
+
+  #product-overview h2 {
+    font-size: 1rem;
+  }
+
+  #product-overview #dev {
+    bottom: 100%;
+  }
+
+  #product-overview #design {
+    bottom: 95%;
+  }
+
+  #product-overview #mobile {
+    bottom: 90%;
+  }
+
+  #product-overview #figure {
+    bottom: 25%;
+  }
+
+  #product-overview #brand {
+    bottom: 30%;
+  }
+
+  #product-overview #wood {
+    bottom: 35%;
+  }
+
+  .network svg {
+    height: 500px;
+  }
+
+  .logo-mask--polygons {
+    -webkit-mask-size: 55% 500px;
+    mask-size: 55% 500px;
+  }
+
+  .service {
+    height: auto
+  }
+
+  .service p {
+    position: relative;
+    font-size: 20px;
+  }
+
+  .service .left,
+  .service .right {
+    left: 0;
+
+    max-width: 48rem;
+    border: solid 1px #797474;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+
 }
