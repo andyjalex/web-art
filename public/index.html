@@ -74,9 +74,26 @@
         </ul>
       </nav>
       <section id="product-overview">
-        <h1>WEB+ART</h1>
-        <div class="circle1"><h1>WEB+ART</h1></div>
-        <div class="circle2"><h1>WEB+ART</h1></div>
+        <div class="hero-shapes">
+          <div class="network">
+            <svg viewBox="0 0 400 400" preserveAspectRatio="none">
+              <polygon points="40,80 140,40 120,170" 
+              />
+              <polygon points="140,40 250,80 190,180" />
+              <polygon points="120,170 190,180 90,300" />
+              <polygon points="250,80 360,40 320,200" />
+              <polygon points="190,180 320,200 250,330" />
+            </svg>
+          </div>
+
+          <div class="circle2"></div>
+        </div>
+        <div class="hero-logo">
+          <h1>WEB+ART</h1>
+          <div class="logo-mask logo-mask--polygons">
+            <h1 class="logo-stroke">WEB+ART</h1>
+          </div>
+        </div>
 
         <ul>
           <li>B</li>
@@ -108,12 +125,18 @@
           <li>t</li>
           <li>y</li>
         </ul>
-        <div class="products">
-          <h2 class="product-web" id="dev">WEB DEVELOPMENT</h2>
-          <h2 class="product-web" id="design">PRODUCT DESIGN</h2>
-          <h2 class="product-web" id="mobile">MOBILE DEVELOPMENT</h2>
+        <div class="products-container">
+          
+          <span class="product-web" id="dev"
+            ><img src="./images/webdev-icon.png"
+          /></span>
+          <span class="product-web" id="design"
+            ><img src="./images/ui-website-mockup-icon.png"
+          /></span>
+          <span id="mobile" class="product-web"
+            ><img src="./images/ios-icon.png"
+          /></span>
           <h2 class="product-art" id="figure">FIGURE DRAWING</h2>
-          <h2 class="product-art" id="wood">WOOD CALVING</h2>
           <h2 class="product-art" id="brand">BRAND DESIGN</h2>
         </div>
       </section>
@@ -121,12 +144,19 @@
         <h2>About Web+Art</h2>
         <div class="services__list">
           <article class="service">
-            Web+Art is an independent creative digital studio focused on
-            building websites, mobile apps and digital products that combine
-            thoughtful design with modern development. Every project starts with
-            an idea. We help turn those ideas into polished digital experiences
-            through a balance of creativity, technology and attention to detail.
-            Read more →
+            <p class="left">
+              Web+Art is an independent creative digital studio focused on
+              building websites, mobile apps and digital products that combine
+              thoughtful design with modern development. Every project starts
+              with an idea. We help turn those ideas into polished digital
+              experiences through a balance of creativity, technology and
+              attention to detail.
+            </p>
+
+            <p class="right">
+              We are an independent creative technology studio founded by
+              Andy Alexander. <a href="about/index.html">Read more →</a>
+            </p>
           </article>
         </div>
       </section>

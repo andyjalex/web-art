@@ -1,5 +1,5 @@
 .about-page {
-  background: #F7F6F4;
+  background: #f7f6f4;
   margin-top: 0;
   min-height: calc(100vh - 11.5rem);
 }
@@ -131,10 +131,10 @@
 }
 
 .work-history__title-container {
-  width: 50%;
-    padding-right: 8rem;
-    text-align: right;
-    margin-bottom: 2rem;
+  width: 100%;
+  padding-right: 8rem;
+  text-align: right;
+  margin-bottom: 2rem;
 }
 .work-history__title-container strong {
   font-size: 20px;
@@ -152,10 +152,10 @@
   background-color: rgb(132 148 133);
   top: 0;
   height: 0;
-  left: 50%;
+  left: 10%;
   margin-left: -3px;
   transition: 1s;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 /* Container around content */
@@ -164,7 +164,7 @@
   position: relative;
   background-color: inherit;
   width: 100%;
-  display: flex;
+  display: block;
 }
 
 /* The circles on the timeline */
@@ -174,11 +174,11 @@
   width: 16px;
   height: 16px;
   right: -0px;
-  background-color: #A79C6F;
+  background-color: #a79c6f;
   top: 16px;
   border-radius: 50%;
   z-index: 1;
-  left: calc(50% - 10px);
+  left: calc(10% - 10px);
   transition: 1s;
   border: solid 1px rgb(37, 36, 36);
   z-index: 1000;
@@ -273,7 +273,6 @@
 }
 .content.right {
   display: flex;
-  
 }
 
 /* scolling styles */
@@ -337,12 +336,11 @@ section.show-animate .animate {
 .timeline-img {
   width: 100%;
   vertical-align: top;
-  
 }
 .u2d {
- width: 100%;
+  width: 100%;
 }
-@media (min-width: 48rem) {
+@media (min-width: 40rem) {
   .about-hero {
     padding-inline: 2rem;
   }
@@ -361,4 +359,17 @@ section.show-animate .animate {
     justify-content: space-between;
     align-items: center;
   }
+  .timeline-line {
+    left: 50%;
+  }
+
+  .timeline-dot {
+    left: calc(50% - 10px);
+  }
+  .container {
+    display: flex;
+  }
+  .work-history__title-container {
+  width: 50%;
+}
 }
