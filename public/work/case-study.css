@@ -1,0 +1,132 @@
+/* Case study pages. Builds on about/about.css (hero, sections, panel, CTA). */
+
+.case-study__eyebrow {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #22e7c0;
+}
+
+.case-study__section h2 {
+  scroll-margin-top: 5rem; /* clear the fixed header on #anchor jumps */
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  color: #001b0f;
+}
+
+.case-study__section h3 {
+  margin: 0 0 0.5rem;
+  color: #001b0f;
+}
+
+.case-study__section p {
+  max-width: 48rem;
+  margin: 0 0 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.case-study__section + .case-study__section {
+  border-top: 1px solid rgba(0, 27, 15, 0.12);
+}
+
+/* Role facts */
+.case-study__facts {
+  margin: 0;
+}
+
+.case-study__facts dt {
+  font-weight: 700;
+  color: #001b0f;
+}
+
+.case-study__facts dd {
+  margin: 0.25rem 0 1rem;
+}
+
+.case-study__facts dd:last-child {
+  margin-bottom: 0;
+}
+
+/* Process steps */
+.case-study__steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.case-study__step {
+  background: white;
+  padding: 1.25rem;
+  border-top: 4px solid #ffb62e;
+}
+
+/* Figures: sketches, wireframes and screenshots */
+.case-study__figure {
+  margin: 1rem 0 0;
+}
+
+.case-study__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 4px 12px;
+}
+
+.case-study__figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Before / after: stacked on small screens, side by side from 40rem */
+.case-study__compare {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.case-study__compare .case-study__figure {
+  margin: 0;
+}
+
+.case-study__tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 700;
+  color: white;
+  background: #ff5454;
+}
+
+.case-study__tag--after {
+  background: #0e4f1f;
+}
+
+/* Placeholders: remove the class once real content is in */
+.placeholder-text {
+  background: #fff4d6;
+  outline: 2px dashed #ffb62e;
+  outline-offset: 2px;
+  color: #6b4e00 !important;
+  font-style: italic;
+}
+
+.about-hero .placeholder-text {
+  color: #6b4e00;
+}
+
+@media (min-width: 40rem) {
+  .case-study__compare {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 64rem) {
+  .case-study__steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

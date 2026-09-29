@@ -471,6 +471,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+  margin-top: 100vh; /* push below the absolutely positioned hero */
 }
 
 @media (max-width: 640px) {
@@ -485,6 +486,51 @@ body {
   margin: 2rem;
   color: white;
   text-align: center;
+}
+
+.case-studies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.case-study-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: #001b0f;
+  border-left: 6px solid #22e7c0;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease-out;
+}
+
+.case-study-card:hover,
+.case-study-card:focus-visible {
+  transform: translateY(-4px);
+}
+
+.case-study-card h3 {
+  margin: 0;
+  font-family: "Anton", "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.case-study-card__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #22e7c0;
+}
+
+.case-study-card__cta {
+  font-weight: 700;
+  color: #ffb62e;
 }
 
 .services__list {
