@@ -77,6 +77,41 @@ h1 {
   pointer-events: none;
 }
 
+/* .hero-author {
+  position: absolute;
+
+  display: flex;
+  left: 20%;
+  bottom: 30%;
+
+} */
+#product-overview .hero-name {
+  position: absolute;
+  align-items: baseline;
+  display: flex;
+  left: 25%;
+  bottom: 30%;
+  z-index: 3;
+}
+
+#product-overview .hero-name h2 {
+  position: relative;
+  font-family: "GraphikBold";
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-right: 10px;
+
+}
+#product-overview .hero-name p {
+  position: relative;
+  font-family: "GraphikRegular";
+  text-align: center;
+  color: #fff;
+  margin: 0;
+
+}
+
 .hero-shapes {
   z-index: 1;
 }
@@ -135,8 +170,8 @@ h1 {
   background: linear-gradient(
     135deg,
     transparent 0 52%,
-    rgba(255, 182, 46, .5) 62%,
-    rgba(255, 182, 46, .75) 72%,
+    rgba(255, 182, 46, 0.5) 62%,
+    rgba(255, 182, 46, 0.75) 72%,
     transparent 94%
   );
   animation: reveal 2s forwards;
@@ -208,8 +243,8 @@ h1 {
 #product-overview ul {
   position: absolute;
   display: flex;
-  left: 20%;
-  bottom: 30%;
+  left: 35%;
+  bottom: 20%;
   margin: 0;
   padding: 0;
   margin-top: 0;
@@ -235,14 +270,15 @@ h1 {
   opacity: 0;
   visibility: hidden;
   list-style: none;
-  font-size: 2em;
-  font-weight: 400;
-  letter-spacing: 15px;
+  font-size: 1.2em;
+  font-weight: 200;
+  letter-spacing: 8px;
   margin: 0 0;
-  animation: fadeInText 3s forwards;
+  animation: fadeInText .4s forwards;
+  animation-delay: 0.5s;
   animation-delay: calc(0.1s * var(--i));
 
-  font-family: "GraphikMedium", sans-serif;
+  font-family: "GraphikRegular", sans-serif;
 }
 
 @keyframes fadeInText {
@@ -342,7 +378,7 @@ h1 {
   --i: 28;
 }
 
-#product-overview h2 {
+/* #product-overview h2 {
   color: #000;
   position: absolute;
   visibility: hidden;
@@ -353,7 +389,7 @@ h1 {
   padding: 4px;
   border: 2px solid #000;
   border-radius: 4px;
-}
+} */
 .products-container {
   position: absolute;
   display: grid;
@@ -999,7 +1035,7 @@ body {
   }
 
   .service {
-    height: auto
+    height: auto;
   }
 
   .service p {
@@ -1016,6 +1052,4 @@ body {
     padding: 1rem;
     border-radius: 8px;
   }
-
-
 }
