@@ -1,21 +1,18 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
    event.preventDefault();
 
-   const formData = new FormData(event.target);
-   const formObject = {};
-   formData.forEach((value, key) => formObject[key] = value);
+   const form = event.target;
+   const formData = new FormData(form);
 
-   fetch('/contact-us', {
+   fetch(form.action, {
        method: 'POST',
        headers: {
-           'Content-Type': 'application/json'
+           'Accept': 'application/json'
        },
-       body: JSON.stringify(formObject),
-       // credentials: 'include'
+       body: formData,
    })
-   .then(response => response.json())
-   .then(data => {
-       if (data.status === 'success') {
+   .then(response => {
+       if (response.ok) {
            alert('Message sent successfully!');
            window.location.href = 'index.html'; // Redirect to another page
        } else {
