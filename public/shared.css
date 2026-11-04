@@ -115,7 +115,7 @@ main {
 }
 
 .main-footer {
-  background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent);
+  background: rgba(80, 68, 18, 0.6);
  
   margin-top: 0px;
   padding: 32px;
