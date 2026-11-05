@@ -1,92 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact Andy – Web+Art</title>
-    <link rel="shortcut icon" href="../favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../shared.css">
-    <link rel="stylesheet" href="contact-us.css">
-</head>
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="stylesheet" href="contact-us.css" />
+  </head>
 
-<body>
-  <div class="backdrop"></div>
+  <body>
+    <div class="backdrop"></div>
     <header class="contact-main-header">
-        <div style="display: flex; align-items: center; justify-content: center;">
-            <button class="toggle-button">
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-            </button>
-            <a href="../index.html" class="main-header__brand">
-                <img src="../images/white-w+a-logo.png" alt="Web+Art – Andy Alexander, home">
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item">
-                    <a href="../index.html#web-creations">Work</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="../about/index.html">About</a>
-                </li>
-                <li class="main-nav__item main-nav__item--cta">
-                    <a href="index.html">Contact me</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="mobile-nav">
-            <ul class="mobile-nav__items">
-                <li class="mobile-nav__item">
-                    <a href="../index.html#web-creations">Work</a>
-                </li>
-                <li class="mobile-nav__item">
-                    <a href="../about/index.html">About</a>
-                </li>
-                <li class="mobile-nav__item mobile-nav__item--cta">
-                    <a href="index.html">Contact me</a>
-                </li>
-            </ul>
-        </nav>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a href="../index.html" class="main-header__brand">
+          <img
+            src="../images/white-w+a-logo.png"
+            alt="Web+Art – Andy Alexander, home"
+          />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="../index.html#web-creations">Work</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="../about/index.html">About</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cta">
+            <a href="index.html">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item">
+            <a href="../index.html#web-creations">Work</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="../about/index.html">About</a>
+          </li>
+          <li class="mobile-nav__item mobile-nav__item--cta">
+            <a href="index.html">Contact me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="signup-page">
-        <h1 class="signup-title">Great! Tell me how I can help</h1>
-        <form id="contactForm" class="signup-form" action="https://formspree.io/f/meaapwye" method="POST">
-                <label for="first-name">First name</label>
-                <input type="text" id="first-name" name="first-name">
-                <label for="last-name">Last name</label>
-                <input type="text" id="last-name" name="last-name">
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email">
-                <label for="query">Tell me more about your project</label>
-                <input type="text" id="query" name="query">
-                <input type="checkbox" id="agree-terms" name="agree-terms">
-                <label for="agree-terms">Agree to
-                    <a href="#">Terms &amp; Conditions</a>
-                </label>
-                <button type="submit" class="button">Submit</button>
-            </form>
+      <h1 class="signup-title">Great! Feel free to get in touch</h1>
+      <form
+        id="contactForm"
+        class="signup-form"
+        action="https://formspree.io/f/meaapwye"
+        method="POST"
+      >
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" name="first-name" />
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="last-name" />
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" />
+        <label for="query">Tell me why you're getting in touch</label>
+        <textarea type="text" cols="40" rows="10" id="query" name="query"></textarea> 
+        <input type="checkbox" id="agree-terms" name="agree-terms" />
+        <label for="agree-terms"
+          >Agree to
+          <a href="#">Terms &amp; Conditions</a>
+        </label>
+        <button type="submit" class="button">Submit</button>
+      </form>
     </main>
     <footer class="main-footer">
-        <nav>
-          <ul class="main-footer__links">
-            <li class="main-footer__link">
-              ©<span class="js-year">2026</span> WebAndArt Limited
-            </li>
-            <li class="main-footer__link">
-                    <a href="../about/index.html">About</a>
-              </li>
-              <li class="main-footer__link">
-                    <a href="index.html">Contact me</a>
-              </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            ©<span class="js-year">2026</span> WebAndArt Limited
+          </li>
+          <li class="main-footer__link">
+            <a href="../about/index.html">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="index.html">Contact me</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
     <script src="./contact-us.js"></script>
     <script src="../shared.js"></script>
-</body>
-
+  </body>
 </html>
