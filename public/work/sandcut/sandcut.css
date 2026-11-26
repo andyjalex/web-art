@@ -1,0 +1,93 @@
+/* SandCut pages. Builds on about/about.css (page background, sections, CTA). */
+
+.sandcut-hero {
+  width: min(42rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 6rem 0 2rem;
+  text-align: center;
+}
+
+.sandcut-hero__logo {
+  width: min(22rem, 100%);
+  height: auto;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+.sandcut-hero p {
+  margin: 0 0 1rem;
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.sandcut-hero__privacy {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0e4f1f;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Privacy policy page */
+.privacy-page .about-hero {
+  min-height: 0;
+  padding: 6rem 1.25rem 2rem;
+  background: none;
+  color: #001b0f;
+  display: block;
+}
+
+.privacy-page .about-hero__content {
+  width: min(48rem, 100%);
+}
+
+.privacy-page .about-hero p {
+  color: #555;
+}
+
+.privacy-table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.privacy-table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+}
+
+.privacy-table th,
+.privacy-table td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 27, 15, 0.12);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.privacy-table th {
+  color: #001b0f;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.privacy-page .case-study__section ul {
+  max-width: 48rem;
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.privacy-page .case-study__section ul li {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+  .sandcut-hero {
+    padding-top: 8rem;
+  }
+}
